@@ -1,3 +1,7 @@
+:root {
+  --font-color: #772475;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -29,7 +33,7 @@ img {
 
 h1 {
   text-align: center;
-  color:#772475;
+  color: #772475;
 }
 
 p {
@@ -96,25 +100,29 @@ thead th {
 }
 
 .go_back_to_home {
+  color: var(--font-color);
   border: 2px solid #d481e3;
   border-radius: 25px;
-  margin: 50px auto;
+  display: inline-block;
+  padding: 5px 8px;
   width: 180px;
   height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.go_back_to_home a {
   text-decoration: none;
-}
-
-.go_back_to_home a:hover {
-  color: rgb(91, 4, 91);
-  text-decoration: none;
+  margin: 50px auto;
 }
 
 .go_back_to_home:hover {
-  background-color: #f5e4f4;
+  color: var(--font-color);
+  background: linear-gradient(to right, #e66465, #9198e5);
+  border: 2px solid rgb(172, 172, 229);
+}
+
+.go_back_to_home:active {
+  color: var(--font-color);
+  transform: rotate(20deg);
+  background: linear-gradient(to right, #e66465, #9198e5);
+  border: 2px solid rgb(172, 172, 229);
 }
